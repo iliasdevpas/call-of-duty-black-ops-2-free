@@ -1,0 +1,76 @@
+"installscript"
+{
+	"registry"
+	{
+		"hkey_local_machine\\software\\activision\\black ops ii"
+		{
+			"string"
+			{
+				"installpath"		"%INSTALLDIR%"
+				"version"		"1.0"
+				"spexepath"		"%INSTALLDIR%\\t6sp.exe"
+				"mpexepath"		"%INSTALLDIR%\\t6mp.exe"
+				"zmexepath"		"%INSTALLDIR%\\t6zm.exe"
+			}
+		}
+		"hkey_local_machine\\software\\activision\\black ops ii"
+		{
+			"string"
+			{
+				"english"
+				{
+					"language"		"ENU"
+				}
+				"french"
+				{
+					"language"		"FRA"
+				}
+				"italian"
+				{
+					"language"		"ITA"
+				}
+				"german"
+				{
+					"language"		"DEU"
+				}
+				"spanish"
+				{
+					"language"		"ESP"
+				}
+				"russian"
+				{
+					"language"		"RUS"
+				}
+				"polish"
+				{
+					"language"		"PLK"
+				}
+				"japanese"
+				{
+					"language"		"JPN"
+				}
+			}
+		}
+	}
+	"Run Process"
+	{
+		"vcredist"
+		{
+			"hasrunkey"		"HKEY_LOCAL_MACHINE\\Software\\Valve\\Steam\\Apps\\202970"
+			"process 1"		"%INSTALLDIR%\\redist\\vcredist_x86.exe"
+			"command 1"		"/passive /norestart"
+			"nocleanup"		"1"
+		}
+		"directx"
+		{
+			"hasrunkey"		"HKEY_LOCAL_MACHINE\\Software\\Valve\\Steam\\Apps\\202970"
+			"process 1"		"%INSTALLDIR%\\redist\\DirectX\\dxsetup.exe"
+			"command 1"		"/silent"
+			"nocleanup"		"1"
+		}
+	}
+}
+"kvsignatures"
+{
+	"installscript"		"8df46728f595f5f4169baf84357660f7fd4e7f10d22e9ea7a0c1d0fe718d8a41dbd23bde5a4c910dbafa92f8c531dde9a14a6553843bfebe89e39efb42bc7227d8d88a1e203707c857691dc3518601a28d87870066ef28c8b5fe930efacd355a5c8a28279870d9b59d9c0effd87ec357b6267406bea81b8630ded51b931327a3"
+}
